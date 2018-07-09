@@ -22,7 +22,7 @@ class ThreadFunc:
 def main():
     print("Starting at: ", ctime())
 
-    # ThreadFunc("loop").loop 跟一下两个式子相等：
+    # ThreadFunc("loop").loop 跟以下两个式子相等：
     # t = ThreadFunc("loop")
     # t.loop
     # 以下t1 和  t2的定义方式相等
