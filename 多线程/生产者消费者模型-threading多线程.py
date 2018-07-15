@@ -38,4 +38,4 @@ if __name__ == '__main__':
         p.start()
     for i in range(5):
         c = Consumer()
-c.start()
+        c.start()
