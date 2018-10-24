@@ -1,0 +1,6 @@
+2018-06-30 20:56:18,687 - ERROR - LOG2.py[:26] - error message
+2018-06-30 20:56:18,687 - CRITICAL - LOG2.py[:27] - critical message
+2018-06-30 21:10:24,252 - ERROR - LOG2.py[:41] - error message
+2018-06-30 21:10:24,252 - CRITICAL - LOG2.py[:42] - critical message
+2018-07-01 09:38:48,178 - ERROR - LOG2.py[:41] - error message
+2018-07-01 09:38:48,179 - CRITICAL - LOG2.py[:42] - critical message

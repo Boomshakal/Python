@@ -1,0 +1,40 @@
+DEBUG:root:This is a debug log.
+INFO:root:This is a info log.
+WARNING:root:This is a warning log.
+ERROR:root:This is a error log.
+CRITICAL:root:This is a critical log.
+DEBUG:root:This is a debug log.
+INFO:root:This is a info log.
+WARNING:root:This is a warning log.
+ERROR:root:This is a error log.
+CRITICAL:root:This is a critical log.
+2018-06-30 20:05:55,870======DEBUG++++++++(message)s
+2018-06-30 20:05:55,870======INFO++++++++(message)s
+2018-06-30 20:05:55,871======WARNING++++++++(message)s
+2018-06-30 20:05:55,871======ERROR++++++++(message)s
+2018-06-30 20:05:55,871======CRITICAL++++++++(message)s
+2018-06-30 20:05:55,871======DEBUG++++++++(message)s
+2018-06-30 20:05:55,871======INFO++++++++(message)s
+2018-06-30 20:05:55,871======WARNING++++++++(message)s
+2018-06-30 20:05:55,871======ERROR++++++++(message)s
+2018-06-30 20:05:55,871======CRITICAL++++++++(message)s
+2018-06-30 20:07:04,173======DEBUG++++++++This is a debug log.
+2018-06-30 20:07:04,174======INFO++++++++This is a info log.
+2018-06-30 20:07:04,174======WARNING++++++++This is a warning log.
+2018-06-30 20:07:04,174======ERROR++++++++This is a error log.
+2018-06-30 20:07:04,174======CRITICAL++++++++This is a critical log.
+2018-06-30 20:07:04,174======DEBUG++++++++This is a debug log.
+2018-06-30 20:07:04,174======INFO++++++++This is a info log.
+2018-06-30 20:07:04,174======WARNING++++++++This is a warning log.
+2018-06-30 20:07:04,174======ERROR++++++++This is a error log.
+2018-06-30 20:07:04,174======CRITICAL++++++++This is a critical log.
+2018-06-30 20:09:55,644======DEBUG++++++++This is a debug log.+++++++/home/li/PycharmProjects/Python/LOG/LOG.py
+2018-06-30 20:09:55,644======INFO++++++++This is a info log.+++++++/home/li/PycharmProjects/Python/LOG/LOG.py
+2018-06-30 20:09:55,644======WARNING++++++++This is a warning log.+++++++/home/li/PycharmProjects/Python/LOG/LOG.py
+2018-06-30 20:09:55,644======ERROR++++++++This is a error log.+++++++/home/li/PycharmProjects/Python/LOG/LOG.py
+2018-06-30 20:09:55,645======CRITICAL++++++++This is a critical log.+++++++/home/li/PycharmProjects/Python/LOG/LOG.py
+2018-06-30 20:09:55,645======DEBUG++++++++This is a debug log.+++++++/home/li/PycharmProjects/Python/LOG/LOG.py
+2018-06-30 20:09:55,645======INFO++++++++This is a info log.+++++++/home/li/PycharmProjects/Python/LOG/LOG.py
+2018-06-30 20:09:55,645======WARNING++++++++This is a warning log.+++++++/home/li/PycharmProjects/Python/LOG/LOG.py
+2018-06-30 20:09:55,645======ERROR++++++++This is a error log.+++++++/home/li/PycharmProjects/Python/LOG/LOG.py
+2018-06-30 20:09:55,645======CRITICAL++++++++This is a critical log.+++++++/home/li/PycharmProjects/Python/LOG/LOG.py

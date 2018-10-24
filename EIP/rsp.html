@@ -1,0 +1,412 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="renderer" content="webkit" />
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+var Com_Parameter = {
+	ContextPath:"/",
+	ResPath:"/resource/",
+	Style:"default",
+	JsFileList:new Array,
+	StylePath:"/resource/style/default/",
+	Lang:"zh-cn",
+	CurrentUserId:"15e5b5bea0aa6c6714e8cbf45789d343",
+	Cache:1540279775330,
+	FirstDayInWeek: parseInt('1') - 1,
+	CalendarMinuteStep: parseInt('5'),
+	SessionExpireTip:"会话过期，请打开新页面重新登录后再提交本页面。",
+	ServiceNotAvailTip:"与服务器连接不通，请联系系统管理员或等会再试。",
+	Date_format:"yyyy-MM-dd",
+	DateTime_format:"yyyy-MM-dd HH:mm",
+	SoftDeleteEnableModules:"com.landray.kmss.kms.multidoc.model.KmsMultidocKnowledge,com.landray.kmss.km.archives.model.KmArchivesBorrow,com.landray.kmss.km.archives.model.KmArchivesMain,com.landray.kmss.km.doc.model.KmDocKnowledge,com.landray.kmss.km.smissive.model.KmSmissiveMain,com.landray.kmss.km.review.model.KmReviewMain",
+	ComfirmDelete:"一旦选择了删除，所选记录的相关数据都会被删除，无法恢复！您确认要执行此删除操作吗？",
+	ComfirmSoftDelete:"您确定要将所选记录放入回收站吗？<br><span style='color:red'>(30天后将自动彻底删除)</span>",
+	OptSuccessInfo:"您的操作已成功！",
+	OptFailureInfo:"操作失败！"
+};
+</script>
+<script type="text/javascript" src='/resource/js/domain.js?s_cache=1540279775330'></script>
+<script type="text/javascript" src='/sys/ui/js/LUI.js?s_cache=1540279775330'></script>
+<script type="text/javascript" src="/resource/js/common.js?s_cache=1540279775330"></script>
+<script type="text/javascript" src="/resource/js/sea.js?s_cache=1540279775330"></script>
+<script type="text/javascript">
+seajs.config({
+	themes : {
+    "icon": ["sys/ui/extend/theme/default/style/icon.css"],
+    "iconfont": ["sys/ui/extend/theme/default/style/iconfont.css"],
+    "module": ["sys/ui/extend/theme/default/style/module.css"],
+    "form": ["sys/ui/extend/theme/default/style/form.css"],
+    "common": ["sys/ui/extend/theme/default/style/common.css"],
+    "portal": ["sys/ui/extend/theme/default/style/portal.css"],
+    "listview": ["sys/ui/extend/theme/default/style/listview.css"],
+    "sns": ["sys/ui/extend/theme/default/style/sns.css"],
+    "chart": ["sys/ui/extend/theme/default/style/chart.css"],
+    "treefont": ["sys/ui/extend/theme/default/style/treefont.css"],
+    "dialog": ["sys/ui/extend/theme/default/style/dialog.css"],
+    "widget": ["sys/ui/extend/theme/default/style/widget.css"],
+    "step": ["sys/ui/extend/theme/default/style/step.css"],
+    "zone": ["sys/ui/extend/theme/default/style/zone.css"],
+    "profile": ["sys/ui/extend/theme/default/style/profile.css"],
+    "calendar": ["sys/ui/extend/theme/default/style/calendar.css"],
+    "prompt": ["sys/ui/extend/theme/default/style/listview.css"]
+},
+	paths: {
+		'lui': 'sys/ui/js'
+	},
+	alias: {
+		'lui/jquery': 'resource/js/jquery',
+		'lui/jquery-ui': 'resource/js/jquery-ui/jquery.ui'
+	},
+	preload: ['/resource/js/plugin-theme.js','/resource/js/plugin-lang.js'],
+	debug: true,
+ 	base: '',
+ 	env : {
+ 	 	contextPath: '',
+ 		now : '2018-10-23 21:23',
+ 		pageMaxWidth:'1200px',
+ 		pattern : {
+ 			date : 'yyyy-MM-dd',
+ 			datetime : 'yyyy-MM-dd HH:mm',
+ 			time : 'HH:mm'
+ 		},
+ 		locale : "zh-cn",
+ 		config : {},
+ 		cache : 1540279775330
+ 	}
+});
+seajs.use([ 'lui/parser', 'lui/jquery', 'theme!common', 'theme!icon','theme!iconfont' ],
+	function(parser, $) {
+		$(document).ready(function() {
+			parser.parse();
+		});
+	}); 
+</script>
+
+
+<link rel="shortcut icon" href="/favicon.ico">
+
+
+        <link rel="stylesheet" href="/resource/style/default/login_single_random/css/login.css?s_cache=1540279775330" />
+        <link rel="stylesheet" href="/resource/style/default/login_single_random/css/animate.css?s_cache=1540279775330" />
+        <link rel="stylesheet" href="/ui-exts/megmeet/login/css/style.css" />
+        <script>
+            Com_IncludeFile("jquery.js");
+            Com_IncludeFile("jquery.fullscreenr.js", "style/default/login_single_random/js/");
+        </script>
+        <script src="/ui-exts/megmeet/login/js/custom.js"></script>
+ 	
+<script type="text/javascript">
+	function checkLocation(){
+		if(top==window){
+			return;
+		}
+		domain.call(window.top,"login");
+	}
+	try{
+		checkLocation();
+	}catch(e){window.console(e);}
+</script>
+<title>登录系统</title>
+</head>
+<body>
+  
+
+        <!-- 背景图片 Starts -->
+        <div class="login-background-img"><img src="" id="login-bgImg" /></div>
+        <script type="text/javascript">
+            // 您必须指定你的背景图片的大小
+            var FullscreenrOptions = { width: 1920, height: 1080, bgID: '#login-bgImg' };
+            // 此处将会激活全屏背景
+            jQuery.fn.fullscreenr(FullscreenrOptions);
+        </script>
+        <!-- 背景图片 Ends -->
+
+        
+        <div class="login_header">
+        	<div class="login_top_bar"></div>
+        </div>
+
+        <!-- 下拉弹出窗 Starts -->
+        <div class="login-dropbox">
+            <div class="login-dropbox-toggle">
+                <div class="iconbox">
+                    <span class="icon-QRcode"></span>
+                    <span class="icon-PC"></span>
+                </div>
+            </div>
+            <div class="login-dropbox-menu">
+                <ul class="login-dropbox-QRcode-list" style="width: 320px" >
+                    <li>
+                        <div class="login-QRcode-box">
+                            <img src="/ui-exts/megmeet/login/imgs/qcode_01.jpg" />
+                            <div class="title">总部微信公众号</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="login-QRcode-box">
+                            <img src="/ui-exts/megmeet/login/imgs/qcode_02.png" />
+                            <div class="title">株洲微信公众号</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div><!-- 下拉弹出窗 Ends -->
+
+        <div class="login_form_wrap">
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+Com_IncludeFile("security.js");
+</script>
+
+<script type="text/javascript">
+function kmss_onsubmit(){
+	var loginInput = "请输入用户名和密码";
+	cleanerErrorMsg();
+	if(document.forms[0].j_username.value==""){
+		showErrorMsg(loginInput);
+		document.forms[0].j_username.focus();
+		return false;
+	}
+	if(document.forms[0].j_password.value==""){
+		showErrorMsg(loginInput);
+		document.forms[0].j_password.focus();
+		return false;
+	}
+	
+	document.getElementsByName("btn_submit")[0].disabled = true;	 
+	encryptPassword();
+
+	
+	
+	return true;
+}
+//显示错误信息
+function showErrorMsg(msg) {
+	var info = "系统提示：";
+	$(".lui_login_message_div").addClass("tip_message").html(info + msg);
+}
+//清除错误信息
+function cleanerErrorMsg() {
+	$(".lui_login_message_div").removeClass('tip_message').html("");
+}
+seajs.use(['lui/jquery'], function($) {
+	window.onload = function(){
+		var j_username = document.getElementsByName('j_username')[0].value;
+		if(j_username==""){ 
+			document.getElementsByName('j_username')[0].focus();
+		}
+		else{
+			document.getElementsByName('j_password')[0].focus();
+		}
+		
+		$(document).keypress(function(e) {
+			//if (e.which == 13)
+			//	$("form").submit();
+		});
+	}
+});
+function encryptPassword(){ 
+	document.forms[0].j_password.value = desEncrypt(document.forms[0].j_password.value);
+}
+</script>
+
+<form action="j_acegi_security_check" method="POST" onsubmit="return kmss_onsubmit();" autocomplete="off">
+
+	<div class="login_form_inside">
+		<div class="login_form_tips">
+			
+			
+			
+				
+				
+					
+				
+			
+		</div>
+		<div class="login_form_arrtbox">
+			<div class="login_form_arrt lfi_text">
+				用户名：
+			</div>
+			<div class="login_form_arrt lfi_input">
+				
+					
+					
+						
+					
+				
+				<input type='text' name='j_username' onfocus="this.select();" value='' placeholder="用户名" autocomplete="off">
+				
+			</div>
+			<div class="login_form_arrt lfi_text">
+				密　码：
+			</div>
+			<div class="login_form_arrt lfi_input">
+				<input type='password' name='j_password' placeholder="密码" autocomplete="off">
+			</div>
+			<div class="login_form_arrt lfi_button" onclick="document.getElementsByName('btn_submit')[0].click();">
+				登录
+			</div>
+		</div>
+
+		
+		
+
+		
+		
+			<div class="login_form_arrt lfi_text">
+				语　言：
+			</div>
+			<div class="login_form_arrt lfi_exc">
+				<input type="radio" name="j_lang" value="zh-CN" onclick="changeLang(this.value)"  checked ><label>中文</label><input type="radio" name="j_lang" value="en-US" onclick="changeLang(this.value)" ><label>English</label>
+			</div>
+			<script>
+				//语言切换
+				function changeLang(value){
+					var url = document.location.href;
+					var temp = location.href.split("#");
+					url = Com_SetUrlParameter(temp[0], "j_lang", value);
+					url = Com_SetUrlParameter(url, "username", document.getElementsByName("j_username")[0].value);
+					if (temp.length > 1) {
+						url = url + "#" + temp[1];
+					}
+					location.href = url;
+				}
+			</script>
+		
+
+
+	</div>
+
+
+
+	<input type=hidden name="j_redirectto" value="http://eip.megmeet.com:8008/sys/portal/page.jsp">
+	<input type=submit style="border: 0px; width: 0px; height: 0px; background: none;" name="btn_submit">
+
+</form>
+        </div>
+
+        
+        
+
+
+        <script type="text/javascript">
+            
+             LUI.ready(function(){
+                 if("en-US" == "zh") {
+                    //英文环境
+                     $('body').addClass('muilti_eng');
+                 }
+             });
+
+             // 获取随机登录图片信息，返回随机获取的图片名称
+             function get_random_bg() {
+                
+                return "bg_01.jpg?s_cache=1540279775330";
+             }
+            //添加提示
+            $('body').append(
+                '<div class="tipsClass">大写锁定已打开</div>'
+            );
+
+        </script>
+	
+</body>
+</html>
+
+
