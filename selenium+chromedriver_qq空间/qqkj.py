@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 browser = webdriver.Chrome()
 browser.get('https://user.qzone.qq.com')
 user ='362169885'
-password ='lhm9223572309'
+password ='******'
 
 browser.switch_to_frame('login_frame')
 log = browser.find_element_by_id("switcher_plogin")
