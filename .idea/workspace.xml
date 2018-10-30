@@ -2,36 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="748ab4c9-c34a-433f-8a9b-5de96954c9af" name="Default" comment="EIP系统流程、任务爬取">
-      <change afterPath="$PROJECT_DIR$/.idea/Python.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EIP/EIP_login.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EIP/rsp.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LOG/all.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LOG/all.log.2018-06-30" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LOG/error.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LOG/log输出" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WeChat/WeChat.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WeChat/map.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WeChat/map图.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WeChat/render.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WeChat/wxpy.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WeChat/占比图.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WeChat/直方图.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selenium+chromedriver_qq空间/qqkj.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wxpy.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/爬虫/selenium+chromedriver/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/爬虫/selenium+chromedriver/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/爬虫/selenium+chromedriver/.idea/selenium+chromedriver.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/爬虫/selenium+chromedriver/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/爬虫/selenium+chromedriver/clear.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/爬虫/selenium+chromedriver/daxiongmao.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/爬虫/selenium+chromedriver/ghostdriver.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/爬虫/selenium+chromedriver/hangmu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/爬虫/selenium+chromedriver/hangmu2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/爬虫/selenium+chromedriver/index.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EIP/EIP系统待办标题.py" beforeDir="false" afterPath="$PROJECT_DIR$/EIP/EIP系统待办标题.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EIP/EIP系统所有流程.py" beforeDir="false" afterPath="$PROJECT_DIR$/EIP/EIP系统所有流程.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,6 +29,7 @@
     <SUITE FILE_PATH="coverage/Python$map.coverage" NAME="map Coverage Results" MODIFIED="1536219070365" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WeChat" />
     <SUITE FILE_PATH="coverage/Python$qqkj.coverage" NAME="qqkj Coverage Results" MODIFIED="1540302403768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/selenium+chromedriver_qq空间" />
     <SUITE FILE_PATH="coverage/Python$v2__1_.coverage" NAME="v2 (1) Coverage Results" MODIFIED="1534238689943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫/selenium+chromedriver" />
+    <SUITE FILE_PATH="coverage/python$EIP.coverage" NAME="EIP系统所有流程 Coverage Results" MODIFIED="1540531316681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/EIP" />
     <SUITE FILE_PATH="coverage/Python$v1__1_.coverage" NAME="v1 (1) Coverage Results" MODIFIED="1533719668795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫/Ajax" />
     <SUITE FILE_PATH="coverage/Python$js.coverage" NAME="有道词典js加密 Coverage Results" MODIFIED="1534238578586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫" />
     <SUITE FILE_PATH="coverage/Python$_.coverage" NAME="多进程 派生 Coverage Results" MODIFIED="1531140006298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/多线程" />
@@ -117,25 +90,36 @@
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
     </session>
+    <session id="-643706202">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages" />
+      <usages-collector id="statistics.file.types.edit" />
+      <usages-collector id="statistics.js.language.service.starts" />
+      <usages-collector id="statistics.file.extensions.edit" />
+    </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="Python" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/selenium+chromedriver_qq空间/qqkj.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="610">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -179,7 +163,6 @@
         <option value="$PROJECT_DIR$/爬虫/Ajax/v1.py" />
         <option value="$PROJECT_DIR$/爬虫/library.py" />
         <option value="$PROJECT_DIR$/EIP.py" />
-        <option value="$PROJECT_DIR$/EIP/EIP系统所有流程.py" />
         <option value="$PROJECT_DIR$/EIP/EIP系统所有任务.py" />
         <option value="$PROJECT_DIR$/EIP/EIP系统待办标题.py" />
         <option value="$PROJECT_DIR$/WeChat.py" />
@@ -190,6 +173,7 @@
         <option value="$PROJECT_DIR$/WeChat/WeChat.py" />
         <option value="$PROJECT_DIR$/EIP/EIP_login.py" />
         <option value="$PROJECT_DIR$/selenium+chromedriver_qq空间/qqkj.py" />
+        <option value="$PROJECT_DIR$/EIP/EIP系统所有流程.py" />
       </list>
     </option>
   </component>
@@ -199,11 +183,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="459" />
-    <option name="y" value="213" />
-    <option name="width" value="1198" />
-    <option name="height" value="829" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="170" />
+    <option name="y" value="141" />
+    <option name="width" value="1037" />
+    <option name="height" value="862" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -227,24 +211,29 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="EIP" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/li/PycharmProjects/Python/LOG/all.log.2018-06-30" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../scrapy/eip" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -270,7 +259,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.qqkj">
+  <component name="RunManager" selected="Python.EIP系统所有流程">
     <configuration name="占比图" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -588,6 +577,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.EIP系统所有流程" />
         <item itemvalue="Python.qqkj" />
         <item itemvalue="Python.EIP_login" />
         <item itemvalue="Python.map图" />
@@ -654,15 +644,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="459" y="213" width="1198" height="829" extended-state="0" />
+    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.495114" visible="true" weight="0.36851212" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.495114" visible="true" weight="0.20127796" />
       <window_info id="Structure" order="1" sideWeight="0.504886" side_tool="true" weight="0.18085106" />
       <window_info id="Favorites" order="2" sideWeight="0.50274724" side_tool="true" weight="0.27963272" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32991204" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49894738" weight="0.3280255" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49158248" weight="0.56671447" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49158248" visible="true" weight="0.56568944" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3288889" />
@@ -857,13 +847,6 @@
     <entry file="file://$PROJECT_DIR$/爬虫/library.py" />
     <entry file="file://$PROJECT_DIR$/爬虫/有道词典js加密.py" />
     <entry file="file://$PROJECT_DIR$/爬虫/Ajax/v1.py" />
-    <entry file="file://$PROJECT_DIR$/EIP/EIP系统所有流程.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="35" column="3" lean-forward="true" selection-start-line="35" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/EIP/EIP系统所有任务.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -942,13 +925,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/EIP/rsp.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/爬虫/selenium+chromedriver/clear.png">
       <provider selected="true" editor-type-id="images" />
@@ -972,9 +949,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1007">
           <caret line="53" column="21" lean-forward="true" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
-          <folding>
-            <element signature="e#1#34#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -982,8 +956,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="610">
           <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EIP/EIP系统所有流程.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
           <folding>
-            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>

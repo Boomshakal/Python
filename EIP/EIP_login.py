@@ -1,20 +1,20 @@
-
+import csv
+import json
 from urllib import request, parse
 from http import cookiejar
+from lxml import etree
 
 #  创建cookiejar的实例
 cookie = cookiejar.CookieJar()
-
 # 生成 cookie的管理器
 cookie_handler = request.HTTPCookieProcessor(cookie)
 # 创建http请求管理器
 http_handler = request.HTTPHandler()
-
 # 生成https管理器
 https_handler = request.HTTPSHandler()
-
 # 创建请求管理器
 opener = request.build_opener(http_handler, https_handler, cookie_handler)
+
 
 def login():
     '''
@@ -22,37 +22,41 @@ def login():
     需要输入用户名密码，用来获取登录cookie凭证
     :return:
     '''
-
-    # 此url需要从登录form的action属性中提取
-    url = "http://eip.megmeet.com:8008/login.jsp"
-
+    login_url = "http://eip.megmeet.com:8008/j_acegi_security_check"
+    # 此login_url需要从登录form的action属性中提取
     # 此键值需要从登录form的两个对应input中提取name属性
     data = {
         "j_username": "yhs375",
         "j_password": "lhm9223572309"
     }
-
     # 把数据进行编码
     data = parse.urlencode(data)
-
     # 创建一个请求对象
-    req = request.Request(url, data=bytes(data,encoding='utf-8'))
-
+    req = request.Request(login_url, data=bytes(data,encoding='utf-8'))
     # 使用opener发起请求
     response = opener.open(req)
-    #print(response)
 
-def getHomePage():
-    url = "http://eip.megmeet.com:8008/sys/portal/page.jsp"
-
+def geterrInfo():
     # 如果已经执行了login函数，则opener自动已经包含相应的cookie值
+    url = "http://eip.megmeet.com:8008/km/review/km_review_index/kmReviewIndex.do?method=list&q.mydoc=all&q.j_path=%2FlistAll&q.fdTemplate=1666236b6b0126bbc42394e49a8ae720&orderby=docCreateTime&ordertype=down&__seq=1540814392498&s_ajax=true"
     rsp = opener.open(url)
-
-
     html = rsp.read().decode()
-    with open("rsp.html", "w") as f:
-        f.write(html)
+    result=json.loads(html)
+
+    with open('data.csv', 'a', encoding='utf-8') as file:
+        writer = csv.writer(file)
+        writer.writerow(['发起人', '申请编号', '机型料号', '机型名称', '托工单号', '工单数量', '物料料号', '投入数量', '不良数量', '问题描述', '原因分析', '临时措施', '围堵措施',
+             '永久措施', '效果确认'])
+
+        for i in  result['datas']:
+            fdId=i[0]['value']   #获取fdId用于next_url的get
+            rsp = opener.open(next_url.format(fdId))
+            html = rsp.read().decode()
+            info=etree.HTML(html).xpath('//div[@class="xform_inputText"]//text()')
+            print(info)
+            writer.writerow(info)   #加入信息
 
 if __name__ == '__main__':
+    next_url = 'http://eip.megmeet.com:8008/km/review/km_review_main/kmReviewMain.do?method=view&fdId={}'
     login()
-    getHomePage()
+    geterrInfo()
