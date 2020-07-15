@@ -4,16 +4,14 @@ from json import JSONDecodeError
 from socket import *
 from database.database_connect import DatabasePool, Parameters
 
-# import sentry_sdk
-#
-# # sentry报错收集服务器
-# sentry_sdk.init("https://89f2e30912c64c1c8b4da5b739e706a8@sentry.io/1876964")
 
 HOST = '0.0.0.0'
 PORT = 9999
 BUFSIZ = 1024
 LIKK_SIZE = 10
 ADDR = (HOST, PORT)
+# 重测次数
+RETEST = 1
 
 server = socket(AF_INET, SOCK_STREAM)
 server.bind(ADDR)
@@ -78,21 +76,25 @@ while True:
             # TODO: p_fm_work_create_for_test
             sql = '''
             EXEC p_fm_work_create_for_test @taskorder,@workline,@workstation,@workshift,@workdevice,@department,
-            @sequence,@worker,@workleader,@barcode,@result,'',@details,NULL,0,@usercode,0
+            @sequence,@worker,@workleader,@barcode,@result,'',@details,NULL,@retest,@usercode,0
             '''
 
             p = Parameters().add('taskorder', taskorder).add('workline', workline).add('workstation', workstation)
             p.add('workshift', workshift).add('workdevice', workdevice).add('department', department)
             p.add('sequence', sequence).add('worker', worker).add('workleader', workleader).add('barcode', barcode)
-            p.add('result', result).add('details', details).add('usercode', usercode)
+            p.add('result', result).add('details', details).add('usercode', usercode).add('retest', RETEST)
 
             connect = DatabasePool('X1_CORE_DATA')
             res = connect.ExecuteQuery(sql, p)
 
             if isinstance(res, Exception):
-                rtnstr = res.args[1].decode('utf-8')
-                print(rtnstr)
+                try:
+                    rtnstr = res.args[1].decode('utf-8')
+                except IndexError as e:
+                    rtnstr = '允许重新测试一次'
+                    RETEST -= 1
             else:
                 rtnstr = 'OK'
+                RETEST = 1
 
         clientsock.send(rtnstr.encode('utf-8'))
