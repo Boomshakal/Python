@@ -1,9 +1,9 @@
 import json
+import threading
 from json import JSONDecodeError
 
 from socket import *
 from database.database_connect import DatabasePool, Parameters
-
 
 HOST = '0.0.0.0'
 PORT = 9999
@@ -17,13 +17,8 @@ server = socket(AF_INET, SOCK_STREAM)
 server.bind(ADDR)
 server.listen(LIKK_SIZE)
 
-while True:
-    clientsock, addr = server.accept()
-    # print("addr=%s %s" % (addr, type(addr)))
-    # host = gethostname()
-    # print(host)
-    print(f"客户端ip地址为：{addr[0]}")
 
+def tcp_link(clientsock):
     while True:
         try:
             msg = clientsock.recv(BUFSIZ)
@@ -98,3 +93,19 @@ while True:
                 RETEST = 1
 
         clientsock.send(rtnstr.encode('utf-8'))
+    clientsock.close()
+
+
+while True:
+    clientsock, addr = server.accept()
+    # print("addr=%s %s" % (addr, type(addr)))
+    # host = gethostname()
+    # print(host)
+    print(f"客户端ip地址为：{addr[0]}")
+
+    # 创建线程
+    thread_msg = threading.Thread(target=tcp_link, args=(clientsock,))
+    # 子线程守护主线程
+    thread_msg.setDaemon(True)
+    # 启动线程
+    thread_msg.start()
