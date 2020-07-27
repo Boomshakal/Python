@@ -1,23 +1,22 @@
 import json
 from json import JSONDecodeError
 from Inspect_Server.settings import RETEST
-
+from Inspect_Server.log_setting import logger
 from database.database_connect import DatabasePool, Parameters
 
 
 def getparsedate(msg):
-
     msg_str = msg.decode('utf-8', "ignore")
-
+    logger.info(msg_str)
     try:
         msg_dic = json.loads(msg_str)
     except JSONDecodeError as e:
+        logger.error(e)
         return e
     return msg_dic
 
 
 def checkbarcode(msg_dic):
-
     taskorder = msg_dic.get('taskorder', '')
     sequence = msg_dic.get('sequence', '')
     barcode = msg_dic.get('barcode', '')
@@ -33,6 +32,8 @@ def checkbarcode(msg_dic):
     lists = connect.ExecuteQuery(sql, p)
 
     rtnstr = lists[0].get('rtnstr', '')
+    if rtnstr != 'OK':
+        logger.error(rtnstr)
     return rtnstr
 
 
@@ -71,6 +72,7 @@ def savetestdata(msg_dic, retest=RETEST):
     if isinstance(res, Exception):
         try:
             rtnstr = res.args[1].decode('utf-8')
+            logger.error(rtnstr)
         except IndexError as e:
             rtnstr = '允许重新测试一次'
             retest -= 1
