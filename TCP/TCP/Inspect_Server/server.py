@@ -22,14 +22,14 @@ class Handler(BaseRequestHandler):
                 if isinstance(parsedate, Exception):
                     rtnstr = '请传入正确的JSON字符串'
                     logger.error(rtnstr)
-                    self.request.sendall(rtnstr.encode('utf-8'))
+                    self.request.sendall(rtnstr.encode('GBK'))
                     continue
 
                 rtnstr = checkbarcode(parsedate)
                 if rtnstr == 'OK':
                     rtnstr = savetestdata(parsedate)
 
-                self.request.sendall(rtnstr.encode('utf-8'))
+                self.request.sendall(rtnstr.encode('GBK'))
 
         except Exception as e:
             logger.error(e)
