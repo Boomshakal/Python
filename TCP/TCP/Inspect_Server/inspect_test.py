@@ -6,7 +6,7 @@ from database.database_connect import DatabasePool, Parameters
 
 
 def getparsedate(msg):
-    msg_str = msg.decode('utf-8', "ignore")
+    msg_str = msg.decode('GBK').strip(b'\x00'.decode())
     logger.info(msg_str)
     try:
         msg_dic = json.loads(msg_str)
@@ -71,7 +71,7 @@ def savetestdata(msg_dic, retest=RETEST):
 
     if isinstance(res, Exception):
         try:
-            rtnstr = res.args[1].decode('utf-8')
+            rtnstr = res.args[1].decode('GBK')
             logger.error(rtnstr)
         except IndexError as e:
             rtnstr = '允许重新测试一次'
