@@ -19,11 +19,11 @@ logger = logging.getLogger("mylogger")
 logger.setLevel(logging.DEBUG)
 
 # 为两个不同的文件设置不同的handler
-rf_handler = logging.handlers.TimedRotatingFileHandler("all.log", when='midnight', interval=1, backupCount=7,
+rf_handler = logging.handlers.TimedRotatingFileHandler("./log/all.log", when='midnight', interval=1, backupCount=7,
                                                        atTime=datetime.time(0, 0, 0, 0))
 rf_handler.setFormatter(logging.Formatter("%(asctime)s - %(levelname)s - %(thread)d - %(threadName)s- %(message)s"))
 
-f_handler = logging.FileHandler('error.log')
+f_handler = logging.FileHandler('./log/error.log')
 f_handler.setLevel(logging.ERROR)
 f_handler.setFormatter(logging.Formatter(
     "%(asctime)s - %(levelname)s - %(thread)d - %(threadName)s - %(filename)s[:%(lineno)d] - %(message)s"))

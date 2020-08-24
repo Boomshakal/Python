@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: inspect-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: inspect-server
+  template:
+    metadata:
+      labels:
+        app: inspect-server
+    spec:
+      containers:
+        - name: inspect-server
+          image: tcp_server:laster
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 9999
