@@ -14,6 +14,7 @@ class Handler(BaseRequestHandler):
             while True:
                 data = self.request.recv(1024)
                 print("{} send:".format(self.client_address), data)
+                logger.info(data)
                 if not data:
                     print("connection lost:{}".format(self.client_address))
                     logger.info("connection lost：{}".format(self.client_address))
