@@ -9,3 +9,36 @@
 2020-11-02 08:43:45,550 - ERROR - 2692 - Thread-1 - server.py[:25] - 请传入正确的JSON字符串
 2020-11-02 08:45:02,898 - ERROR - 7536 - Thread-1 - inspect_test.py[:14] - Expecting value: line 1 column 1 (char 0)
 2020-11-02 08:45:02,898 - ERROR - 7536 - Thread-1 - server.py[:26] - 请传入正确的JSON字符串
+2020-11-21 15:20:28,132 - ERROR - 22312 - Thread-1 - inspect_test.py[:14] - Expecting property name enclosed in double quotes: line 1 column 162 (char 161)
+2020-11-21 15:20:28,133 - ERROR - 22312 - Thread-1 - server.py[:25] - 请传入正确的JSON字符串
+2020-11-21 15:21:24,668 - ERROR - 22312 - Thread-1 - inspect_test.py[:14] - Expecting value: line 1 column 190 (char 189)
+2020-11-21 15:21:24,668 - ERROR - 22312 - Thread-1 - server.py[:25] - 请传入正确的JSON字符串
+2020-11-21 15:22:58,584 - ERROR - 22312 - Thread-1 - server.py[:36] - 'gbk' codec can't decode byte 0x80 in position 71: illegal multibyte sequence
+2020-11-21 15:23:27,727 - ERROR - 9564 - Thread-2 - server.py[:36] - 'gbk' codec can't decode byte 0x80 in position 71: illegal multibyte sequence
+2020-11-21 15:25:23,856 - ERROR - 12848 - Thread-1 - server.py[:36] - 'gbk' codec can't decode byte 0x80 in position 71: illegal multibyte sequence
+2020-11-21 15:27:21,057 - ERROR - 22312 - Thread-2 - server.py[:36] - 'gbk' codec can't decode byte 0x80 in position 71: illegal multibyte sequence
+2020-11-21 15:28:31,185 - ERROR - 6992 - Thread-1 - server.py[:36] - 'utf-8' codec can't decode byte 0xb0 in position 136: invalid start byte
+2020-11-21 15:29:49,482 - ERROR - 12492 - Thread-1 - server.py[:36] - 'gbk' codec can't decode byte 0x80 in position 71: illegal multibyte sequence
+2020-11-21 15:32:50,600 - ERROR - 20204 - Thread-1 - server.py[:36] - 'gbk' codec can't decode byte 0x80 in position 71: illegal multibyte sequence
+2020-11-21 15:33:54,023 - ERROR - 15232 - Thread-1 - server.py[:36] - 'gbk' codec can't decode byte 0x80 in position 71: illegal multibyte sequence
+2020-11-21 15:36:51,494 - ERROR - 17048 - Thread-2 - server.py[:36] - 'utf-8' codec can't decode byte 0xb0 in position 136: invalid start byte
+2020-11-21 15:39:29,724 - ERROR - 5860 - Thread-3 - server.py[:36] - 'utf-8' codec can't decode byte 0xb0 in position 136: invalid start byte
+2020-11-21 15:40:36,537 - ERROR - 18104 - Thread-4 - server.py[:36] - 'utf-8' codec can't decode byte 0xb0 in position 136: invalid start byte
+2020-11-21 15:41:52,758 - ERROR - 19832 - Thread-1 - server.py[:36] - 'gbk' codec can't decode byte 0x80 in position 71: illegal multibyte sequence
+2020-11-21 15:44:56,198 - ERROR - 10516 - Thread-2 - server.py[:36] - 'gbk' codec can't decode byte 0x80 in position 71: illegal multibyte sequence
+2020-11-21 15:47:49,529 - ERROR - 9684 - Thread-3 - server.py[:36] - 'gbk' codec can't decode byte 0x80 in position 71: illegal multibyte sequence
+2020-11-21 15:49:05,288 - ERROR - 16116 - Thread-1 - server.py[:36] - 'gbk' codec can't decode byte 0x80 in position 71: illegal multibyte sequence
+2020-11-21 15:51:07,942 - ERROR - 12144 - Thread-1 - server.py[:36] - 'gbk' codec can't decode byte 0x80 in position 330: illegal multibyte sequence
+2020-11-21 15:53:20,964 - ERROR - 7404 - Thread-2 - inspect_test.py[:36] - A11条码<YJR75322010251375>当前执行工序为<结束>。
+2020-11-21 15:54:51,480 - ERROR - 7404 - Thread-2 - server.py[:36] - 'gbk' codec can't decode byte 0x80 in position 71: illegal multibyte sequence
+2020-11-21 15:57:58,582 - ERROR - 11140 - Thread-3 - inspect_test.py[:36] - A11条码<YJR75322010251375>当前执行工序为<结束>。
+2020-11-21 16:07:41,189 - ERROR - 11140 - Thread-3 - server.py[:36] - 'gbk' codec can't decode byte 0x80 in position 71: illegal multibyte sequence
+2020-11-21 16:11:20,504 - ERROR - 5264 - Thread-5 - server.py[:36] - 'gbk' codec can't decode byte 0x80 in position 71: illegal multibyte sequence
+2020-11-21 16:11:42,868 - ERROR - 18272 - Thread-6 - server.py[:36] - 'gbk' codec can't decode byte 0x80 in position 71: illegal multibyte sequence
+2020-11-21 16:14:48,837 - ERROR - 6956 - Thread-6 - server.py[:36] - 'gbk' codec can't decode byte 0x80 in position 71: illegal multibyte sequence
+2020-11-21 16:25:27,455 - ERROR - 23140 - Thread-6 - inspect_test.py[:75] - YJR75322011190811-p_fm_work_create_for_test指定作业人员不存在。73DB-Lib error message 20018, severity 16:
+General SQL Server error: Check messages from the SQL Server
+
+2020-11-21 16:25:40,011 - ERROR - 23140 - Thread-6 - inspect_test.py[:75] - YJR75322011190811-p_fm_work_create_for_test指定作业人员不存在。73DB-Lib error message 20018, severity 16:
+General SQL Server error: Check messages from the SQL Server
+

@@ -71,7 +71,7 @@ def savetestdata(msg_dic, retest=RETEST):
 
     if isinstance(res, Exception):
         try:
-            rtnstr = res.args[1].decode('GBK')
+            rtnstr = res.args[1].decode('UTF-8')
             logger.error(rtnstr)
         except IndexError as e:
             rtnstr = '允许重新测试一次'
