@@ -42,3 +42,31 @@ General SQL Server error: Check messages from the SQL Server
 2020-11-21 16:25:40,011 - ERROR - 23140 - Thread-6 - inspect_test.py[:75] - YJR75322011190811-p_fm_work_create_for_test指定作业人员不存在。73DB-Lib error message 20018, severity 16:
 General SQL Server error: Check messages from the SQL Server
 
+2020-11-25 14:49:57,565 - ERROR - 5384 - Thread-1 - inspect_test.py[:14] - Expecting value: line 1 column 1 (char 0)
+2020-11-25 14:49:57,565 - ERROR - 5384 - Thread-1 - server.py[:25] - 请传入正确的JSON字符串
+2020-11-25 14:50:04,102 - ERROR - 5384 - Thread-1 - inspect_test.py[:14] - Expecting value: line 1 column 1 (char 0)
+2020-11-25 14:50:04,102 - ERROR - 5384 - Thread-1 - server.py[:25] - 请传入正确的JSON字符串
+2020-11-25 14:52:35,055 - ERROR - 4168 - Thread-2 - inspect_test.py[:14] - Expecting value: line 1 column 1 (char 0)
+2020-11-25 14:52:35,055 - ERROR - 4168 - Thread-2 - server.py[:25] - 请传入正确的JSON字符串
+2020-11-25 14:52:36,939 - ERROR - 4168 - Thread-2 - inspect_test.py[:14] - Expecting value: line 1 column 1 (char 0)
+2020-11-25 14:52:36,939 - ERROR - 4168 - Thread-2 - server.py[:25] - 请传入正确的JSON字符串
+2020-11-25 14:52:37,276 - ERROR - 4168 - Thread-2 - inspect_test.py[:14] - Expecting value: line 1 column 1 (char 0)
+2020-11-25 14:52:37,276 - ERROR - 4168 - Thread-2 - server.py[:25] - 请传入正确的JSON字符串
+2020-11-25 14:52:37,415 - ERROR - 4168 - Thread-2 - inspect_test.py[:14] - Expecting value: line 1 column 1 (char 0)
+2020-11-25 14:52:37,416 - ERROR - 4168 - Thread-2 - server.py[:25] - 请传入正确的JSON字符串
+2020-11-25 14:53:00,168 - ERROR - 15388 - Thread-3 - inspect_test.py[:14] - Expecting value: line 1 column 1 (char 0)
+2020-11-25 14:53:00,169 - ERROR - 15388 - Thread-3 - server.py[:25] - 请传入正确的JSON字符串
+2020-11-25 14:53:00,733 - ERROR - 15388 - Thread-3 - inspect_test.py[:14] - Expecting value: line 1 column 1 (char 0)
+2020-11-25 14:53:00,733 - ERROR - 15388 - Thread-3 - server.py[:25] - 请传入正确的JSON字符串
+2020-11-25 14:53:01,116 - ERROR - 15388 - Thread-3 - inspect_test.py[:14] - Expecting value: line 1 column 1 (char 0)
+2020-11-25 14:53:01,117 - ERROR - 15388 - Thread-3 - server.py[:25] - 请传入正确的JSON字符串
+2020-11-25 14:53:07,196 - ERROR - 15388 - Thread-3 - inspect_test.py[:14] - Expecting value: line 1 column 1 (char 0)
+2020-11-25 14:53:07,196 - ERROR - 15388 - Thread-3 - server.py[:25] - 请传入正确的JSON字符串
+2020-11-25 14:53:07,532 - ERROR - 15388 - Thread-3 - inspect_test.py[:14] - Expecting value: line 1 column 1 (char 0)
+2020-11-25 14:53:07,532 - ERROR - 15388 - Thread-3 - server.py[:25] - 请传入正确的JSON字符串
+2020-11-25 14:53:07,691 - ERROR - 15388 - Thread-3 - inspect_test.py[:14] - Expecting value: line 1 column 1 (char 0)
+2020-11-25 14:53:07,692 - ERROR - 15388 - Thread-3 - server.py[:25] - 请传入正确的JSON字符串
+2020-11-25 14:59:11,666 - ERROR - 6000 - Thread-4 - inspect_test.py[:14] - Expecting value: line 1 column 1 (char 0)
+2020-11-25 14:59:11,667 - ERROR - 6000 - Thread-4 - server.py[:25] - 请传入正确的JSON字符串
+2020-11-25 14:59:12,095 - ERROR - 6000 - Thread-4 - inspect_test.py[:14] - Expecting value: line 1 column 1 (char 0)
+2020-11-25 14:59:12,095 - ERROR - 6000 - Thread-4 - server.py[:25] - 请传入正确的JSON字符串
