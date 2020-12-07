@@ -6,7 +6,7 @@ from database.database_connect import DatabasePool, Parameters
 
 
 def getparsedate(msg):
-    msg_str = msg.decode('GBK').strip(b'\x00'.decode())
+    msg_str = msg.decode('GBK').replace(b'\x00'.decode(),'')
     logger.info(msg_str)
     try:
         msg_dic = json.loads(msg_str)
